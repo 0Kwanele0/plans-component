@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgb(236, 235, 235);
+}
+
+:root {
+  --primary-color: #0d0d20;
+  --secondary-color: #63646d;
+  --accent-color: #6161a7;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+body {
+  min-height: 120vh;
+  background-color: var(--primary-color);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-container {
+  text-align: center;
+}
+.header-container h2 {
+  font-size: 31px;
+  padding: 19px;
+}
+.boxes {
+  padding: 27px;
+  display: flex;
+  flex-direction: column;
+}
+.box-one,
+.box-two,
+.box-three {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--accent-color);
+  box-shadow: 0 0 12px 1px #6161a733;
+}
+.btn button {
+  padding: 17px 39px;
+  background: none;
+  border: 1px solid var(--accent-color);
+
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.box-one {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-between;
+}
+.box-two {
+  background-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-between;
+}
+.box-three {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-between;
+}
+.middle h3 {
+  font-weight: 500;
+  font-size: 29px;
+}
+.middle p {
+  font-size: 12px;
+}
+.butn-arrow {
+  display: flex;
+  align-items: center;
+}
+.butn-arrow h4 {
+  padding-right: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+@media screen and (min-width: 700px) {
+  .boxes {
+    padding: 27px;
+    display: flex;
+    flex-direction: row;
+  }
+  .box-one,
+  .box-two,
+  .box-three {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 0 12px 1px #6161a733;
+  }
+  body {
+    min-height: 100vh;
+  }
+  header-container h2 {
+    font-size: 28px;
+    padding: 17px;
+  }
+}
